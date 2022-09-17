@@ -12,4 +12,5 @@ jobs:
   test:
     uses: accuracode/workflow-continuous-integration/.github/workflows/psalm.yml@feature/add-new-psalm
     with:
+      respect-psalm-error: false
       version: 'latest'
