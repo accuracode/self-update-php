@@ -10,4 +10,4 @@ on:
 
 jobs:
   test:
-    uses: accuracode/workflow-continuous-integration/.github/workflows/psalm.yml@5b5afc6da3b03c6331ca3e772c88bd913e189bc4
+    uses: accuracode/workflow-continuous-integration/.github/workflows/psalm.yml@9a4d1521ee23123d2a424ac929754038be2890ad
