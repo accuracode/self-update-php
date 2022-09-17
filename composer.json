@@ -1,0 +1,51 @@
+{
+  "name": "accuracode/self-update",
+  "type": "library",
+  "description": "Almost dependency-free updating helper for your apps",
+  "homepage": "https://github.com/accuracode/self-update-helper",
+  "keywords": [
+    "update",
+    "github"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sergei Lysogot",
+      "email": "me@serhioli.net"
+    }
+  ],
+  "require": {
+    "php": "~7.1 | >=8",
+    "ext-json": "*",
+    "composer/semver": "^3.3",
+    "psr/http-client": "^1.0",
+    "psr/http-factory": "^1.0"
+  },
+  "require-dev": {
+    "guzzlehttp/guzzle": "^7.4",
+    "phpunit/phpunit": "^9.5",
+    "infection/infection": "~0.26.4",
+    "vimeo/psalm": "~4.26"
+  },
+  "scripts": {
+    "test": [
+      "@php vendor/bin/phpunit"
+    ]
+  },
+  "autoload": {
+    "psr-4": {
+      "Accuracode\\SelfUpdate\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "AccuracodeTests\\SelfUpdate\\Unit\\": "tests/unit"
+    }
+  },
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "infection/extension-installer": true
+    }
+  }
+}

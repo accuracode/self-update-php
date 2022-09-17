@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phpunit
+        bootstrap="tests/bootstrap.php"
+        colors="true"
+        cacheResultFile="/tmp/.phpunit.result.cache"
+        convertErrorsToExceptions="true"
+        convertNoticesToExceptions="true"
+        convertWarningsToExceptions="true"
+        executionOrder="random"
+        resolveDependencies="true"
+        stopOnFailure="false"
+>
+    <testsuites>
+        <testsuite name="unit">
+            <directory>tests/unit</directory>
+        </testsuite>
+    </testsuites>
+    <logging>
+        <junit outputFile="tests/_output/phpunit/logs/junit.xml" />
+    </logging>
+    <coverage>
+        <include>
+            <directory suffix=".php">src</directory>
+        </include>
+        <report>
+            <clover outputFile="tests/_output/phpunit/coverage/clover.xml" />
+        </report>
+    </coverage>
+</phpunit>
