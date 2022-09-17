@@ -1,0 +1,13 @@
+name: 'Continuous Integration'
+on:
+  push:
+    branches:
+      - $default_branch
+  pull_request:
+    branches:
+      - $default_branch
+  workflow_dispatch:
+
+jobs:
+  test:
+    uses: accuracode/workflow-continuous-integration/.github/workflows/tools/psalm.yml@a4ef2d362f2d7d8c09e0713710b97d99800adee3

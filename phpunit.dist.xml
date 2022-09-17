@@ -16,14 +16,14 @@
         </testsuite>
     </testsuites>
     <logging>
-        <junit outputFile="tests/_output/phpunit/logs/junit.xml" />
+        <junit outputFile="tests/_output/phpunit/junit.xml" />
     </logging>
     <coverage>
         <include>
             <directory suffix=".php">src</directory>
         </include>
         <report>
-            <clover outputFile="tests/_output/phpunit/coverage/clover.xml" />
+            <clover outputFile="tests/_output/phpunit/clover.xml" />
         </report>
     </coverage>
 </phpunit>
