@@ -10,6 +10,6 @@ on:
 
 jobs:
   test:
-    uses: accuracode/workflow-continuous-integration/.github/workflows/psalm.yml@0100d2ce1c92d8de15a8632317103467a3a9f0d8
+    uses: accuracode/workflow-continuous-integration/.github/workflows/psalm.yml@feature/add-new-psalm
     with:
       version: 'latest'
