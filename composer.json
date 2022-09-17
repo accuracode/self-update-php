@@ -15,7 +15,7 @@
     }
   ],
   "require": {
-    "php": "~7.1 | >=8",
+    "php": "~7.1 || >=8",
     "ext-json": "*",
     "composer/semver": "^3.3",
     "psr/http-client": "^1.0",
@@ -24,8 +24,7 @@
   "require-dev": {
     "guzzlehttp/guzzle": "^7.4",
     "phpunit/phpunit": "^9.5",
-    "infection/infection": "~0.26.4",
-    "vimeo/psalm": "~4.26"
+    "infection/infection": "~0.26.4"
   },
   "scripts": {
     "test": [
