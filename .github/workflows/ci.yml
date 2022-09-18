@@ -12,11 +12,11 @@ jobs:
   test:
     uses: accuracode/workflow-continuous-integration/.github/workflows/psalm.yml@feature/add-new-psalm
     with:
+      strict: false
       version: '4.27.0'
   sonar:
     needs:
       - test
     uses: accuracode/workflow-continuous-integration/.github/workflows/sonarcloud.yml@feature/add-new-psalm
     with:
-      strict: false
       psalm-artifact-name: 'psalm-reports'
