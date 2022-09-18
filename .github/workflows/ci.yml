@@ -19,3 +19,4 @@ jobs:
     uses: accuracode/workflow-continuous-integration/.github/workflows/sonarcloud.yml@feature/add-new-psalm
     with:
       psalm-artifact-name: 'psalm-reports'
+      sonar-toke: ${{ secrets.SONAR_TOKEN }}
