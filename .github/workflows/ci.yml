@@ -14,6 +14,8 @@ jobs:
     with:
       version: '4.27.0'
   sonar:
+    needs:
+      - test
     uses: accuracode/workflow-continuous-integration/.github/workflows/sonarcloud.yml@feature/add-new-psalm
     with:
       psalm-artifact-name: 'psalm-reports'
