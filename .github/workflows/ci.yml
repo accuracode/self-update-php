@@ -10,7 +10,6 @@ on:
 
 jobs:
   test:
-    continue-on-error: true
     uses: accuracode/workflow-continuous-integration/.github/workflows/psalm.yml@feature/add-new-psalm
     with:
       version: '4.27.0'
