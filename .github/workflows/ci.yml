@@ -17,6 +17,7 @@ jobs:
     needs:
       - test
     uses: accuracode/workflow-continuous-integration/.github/workflows/sonarcloud.yml@feature/add-new-psalm
+    secrets:
+      sonar-token: ${{ secrets.SONAR_TOKEN }}
     with:
       psalm-artifact-name: 'psalm-reports'
-      sonar-token: ${{ secrets.SONAR_TOKEN }}
